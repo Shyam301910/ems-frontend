@@ -11,7 +11,8 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Routes>
+        <main>
+          <Routes>
           {/* // http://localhost:3000/ */}
           <Route path='/' element={<EmployeeList />} />
 
@@ -24,6 +25,8 @@ function App() {
           {/* // http://localhost:3000/edit-employee/1 */}
           <Route path='/update-employee' element={<Employee/>} />
         </Routes>
+        </main>
+        
 
         <Footer />
       </BrowserRouter>
